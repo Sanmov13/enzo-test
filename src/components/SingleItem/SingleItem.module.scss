@@ -1,0 +1,43 @@
+.listItems {
+    width: 1200px;
+    background-color: #ffffff;
+    color: #252424;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 20px 15px;
+    align-items: center;
+    border-bottom: 1px solid rgb(243, 235, 235);
+
+    
+    div {
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       width: 400px;
+       margin-left: 130px;
+    }
+
+    .nameItem {
+        color: #157e9e;
+        font-size: larger;
+      }
+
+    span {
+        font-style: normal;
+        font-weight: 400;
+        color: #71756e;
+        width: 400px;
+        font-size: large;
+      }
+}
+
+.btn {
+    padding: 5px;
+    border: none;
+    background-color: #ede6e6;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: center;
+  }
+
+  
