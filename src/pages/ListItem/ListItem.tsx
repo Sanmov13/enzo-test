@@ -9,7 +9,6 @@ const ListItem = () => {
     const [selectedSort, setSelectedSort] = useState("");
     const [product, setProduct] = useState(Products);
 
-
     const sortProducts = (sort: string) => {
         setSelectedSort(sort);
         if (sort === "min") {

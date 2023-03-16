@@ -3,11 +3,11 @@ import { IProducts } from '../../../interfaces/interface';
 import Modal from '../Modal/Modal';
 import styles from './SingleItem.module.scss';
 
-interface IProps {
+interface ISingleItemProps {
     item: IProducts,
 }
 
-const SingleItem: FC<IProps> = ({ item }) => {
+const SingleItem: FC<ISingleItemProps> = ({ item }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const onOpen = useCallback(() => {

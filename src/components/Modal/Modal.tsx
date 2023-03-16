@@ -3,14 +3,13 @@ import { IProducts } from '../../../interfaces/interface';
 import { Products } from '../../utils/data';
 import styles from './Modal.module.scss';
 
-interface IProps {
+interface IModalProps {
     onClose: () => void,
     data: IProducts,
 }
 
-const Modal: FC<IProps> = ({ onClose, data }) => {
+const Modal: FC<IModalProps> = ({ onClose, data }) => {
     const [editOrder, setEditOrder] = useState(data.name);
-
     const onHandleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEditOrder(e.target.value);
     }

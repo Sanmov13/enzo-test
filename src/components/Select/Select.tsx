@@ -2,14 +2,14 @@ import { FC } from 'react';
 import { IOptions } from '../../../interfaces/interface';
 import styles from './Select.module.scss';
 
-interface IProps {
+interface ISelectProps {
     options: IOptions[],
     defaultValue: string,
     value: string,
     onChange: (e: string, sort?: string) => void
 }
 
-const Select: FC<IProps> = ({ options, defaultValue, value, onChange }) => {
+const Select: FC<ISelectProps> = ({ options, defaultValue, value, onChange }) => {
     return (
         <div className={styles.order}>
             <select value={value} onChange={(e) => onChange(e.target.value)}>
